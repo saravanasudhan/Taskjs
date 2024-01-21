@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>Developer Task</h1>
+    </header>
+    <main>
+        <form id="cartForm">
+            <label for="quantityA">Quantity for Product A:</label>
+            <input type="number" id="quantityA" min="0" value="0">
+
+            <label for="quantityB">Quantity for Product B:</label>
+            <input type="number" id="quantityB" min="0" value="0">
+
+            <label for="quantityC">Quantity for Product C:</label>
+            <input type="number" id="quantityC" min="0" value="0">
+
+            <label for="giftWrap">Gift Wrap?</label>
+            <select id="giftWrap">
+                <option value="no">No</option>
+                <option value="yes">Yes</option>
+            </select>
+
+            <button type="button" onclick="calculateInvoice()">Calculate Invoice</button>
+        </form>
+
+        <div id="invoice"></div>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
